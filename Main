@@ -1,0 +1,144 @@
+local ii = Instance.new("ScreenGui")
+ii.Parent = game.Players.LocalPlayer.PlayerGui
+local y = Instance.new("Frame")
+y.Parent = ii
+y.Size = UDim2.new(0.4, 0, 0.4, 0)
+y.Position = UDim2.new(0.3, 0, 0.1, 0)
+y.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+local yh = Instance.new("UICorner")
+yh.Parent = y
+local p = game:GetService("TweenService")
+local goal = UDim2.new(0.4, 0, 0.8, 0)
+local ifo = TweenInfo.new(1, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+local play = p:Create(y, ifo, {Size = goal})
+play:Play()
+local image = Instance.new("ImageLabel")
+image.Parent = y
+image.Size = UDim2.new(0.8, 0, 0.6, 0)
+image.Position = UDim2.new(0.1, 0, 0.1, 0)
+image.Image = "http://www.roblox.com/asset/?id=117930941770007"
+image.BackgroundTransparency = 1
+local text = Instance.new("TextLabel")
+text.Parent = y
+text.Size = UDim2.new(0.8, 0, 0.1, 0)
+text.Position = UDim2.new(0.1, 0, 0.8, 0)
+text.Text = "Made With Love"
+text.TextColor3 = Color3.new(1, 1, 1)
+text.BackgroundTransparency = 1
+text.Font = Enum.Font.SourceSans
+text.TextScaled = true
+text.TextWrapped = true
+wait(1)
+text.Text = "By Dxnny"
+wait(1)
+text.Text = "Join our team! t.me/Dxnnylol"
+wait(2)
+ii: Destroy()
+local m = Instance.new("ScreenGui")
+m.Parent = game.Players.LocalPlayer.PlayerGui
+
+local k = Instance.new("TextLabel")
+k.Font = Enum.Font.SourceSansBold
+k.Parent = m
+k.Size = UDim2.new(0.6, 0, 0.07, 0)
+k.Position = UDim2.new(0.15, 0, 0.15, 0)
+k.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+k.Active = true
+k.Draggable = true
+k.Text = " • Cherry Hub"
+k.TextColor3 = Color3.fromRGB(0, 0, 0)
+k.TextSize = 15
+k.TextXAlignment = Enum.TextXAlignment.Left
+k.BorderSizePixel = 0
+
+local i = Instance.new("Frame")
+i.Parent = k
+i.Size = UDim2.new(1, 0, 0, 0)
+i.Position = UDim2.new(0, 0, 1, 0)
+i.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
+i.BorderSizePixel = 0
+local os = Instance.new("Frame")
+os.Size = UDim2.new(0.7,0,0.9)
+os.Position = UDim2.new(0.28,0,0.05)
+os.BackgroundColor3 = Color3.fromRGB(40,40,40)
+os.BorderSizePixel = 0
+os.Parent = i
+local function getin()
+    i.Visible = true
+    i.Size = UDim2.new(1, 0, 0, 0)
+    local im = game:GetService("TweenService")
+    local hoal = UDim2.new(1, 0, 8, 0)
+    local ifo = TweenInfo.new(1, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+    local mi = im:Create(i, ifo, { Size = hoal })
+    mi:Play()
+end
+getin()
+
+local Ex = Instance.new("TextButton")
+Ex.Parent = k
+Ex.Size = UDim2.new(0.05, 0, 1, 0)
+Ex.Position = UDim2.new(0.945, 0, 0, 0)
+Ex.Text = "X"
+Ex.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ex.TextSize = 10
+Ex.BackgroundTransparency = 1
+
+local bx = Instance.new("TextButton")
+bx.Parent = k
+bx.Size = UDim2.new(0.05, 0, 1, 0)
+bx.Position = UDim2.new(0.9, 0, 0, 0)
+bx.Text = "-"
+bx.TextColor3 = Color3.fromRGB(0, 0, 0)
+bx.TextSize = 10
+bx.BackgroundTransparency = 1
+
+local function getout()
+    local ji = game:GetService("TweenService")
+    local heal = UDim2.new(1, 0, 0, 0)
+    local ifo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+    local mj = ji:Create(i, ifo, { Size = heal })
+    mj:Play()
+    wait(0.5)
+    i.Visible = false
+end
+
+Ex.MouseButton1Click:Connect(function()
+    getout()
+    wait(1)
+    m:Destroy()
+end)
+
+bx.MouseButton1Click:Connect(function()
+    if i.Size == UDim2.new(1, 0, 8, 0) then
+        getout()
+    else
+        getin()
+    end
+end)
+
+local buttonsData = {
+    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() print("Открыт раздел About") end},
+    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() print("Открыт раздел DxnnyScripts") end},
+    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() print("Открыт раздел Admins") end},
+    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() print("Открыт раздел Hubs") end},
+    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() print("Открыт раздел Interesting") end},
+    { Text = "Jump to center", Position = UDim2.new(0.02, 0, 0.82, 0), Function = function() 
+        local plr = game.Players.LocalPlayer
+        if plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
+            plr.Character.HumanoidRootPart.CFrame = CFrame.new(0, 10, 0)
+        end
+    end}
+}
+
+for _, btnData in ipairs(buttonsData) do
+    local btn = Instance.new("TextButton")
+    btn.Parent = i
+    btn.Size = UDim2.new(0.25, 0, 0.15, 0)
+    btn.Position = btnData.Position
+    btn.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    btn.BorderSizePixel = 0
+    btn.Text = btnData.Text
+    btn.TextSize = 15
+    btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    btn.MouseButton1Click:Connect(btnData.Function)
+end
