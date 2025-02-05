@@ -156,11 +156,11 @@ bx.MouseButton1Click:Connect(function()
     end
 end)
 local buttonsData = {
-    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tl.Visible = true tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tl.Visible = false tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tl.Visible = true tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
     { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
-    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tl.Visible = false tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() tl.Visible = false tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
     { Text = "Jump to center", Position = UDim2.new(0.02, 0, 0.82, 0), Function = function() 
         local plr = game.Players.LocalPlayer
         if plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
