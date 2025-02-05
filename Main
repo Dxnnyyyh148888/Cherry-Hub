@@ -28,15 +28,12 @@ text.BackgroundTransparency = 1
 text.Font = Enum.Font.SourceSans
 text.TextScaled = true
 text.TextWrapped = true
-wait(1)
-text.Text = "By Dxnny"
-wait(1)
-text.Text = "Join our team! t.me/Dxnnylol"
-wait(2)
+wait(2.5)
+text.Text = "By Dxnny, T.me/Dxnnylol"
+wait(2.5)
 ii: Destroy()
 local m = Instance.new("ScreenGui")
 m.Parent = game.Players.LocalPlayer.PlayerGui
-
 local k = Instance.new("TextLabel")
 k.Font = Enum.Font.SourceSansBold
 k.Parent = m
@@ -50,7 +47,6 @@ k.TextColor3 = Color3.fromRGB(0, 0, 0)
 k.TextSize = 15
 k.TextXAlignment = Enum.TextXAlignment.Left
 k.BorderSizePixel = 0
-
 local i = Instance.new("Frame")
 i.Parent = k
 i.Size = UDim2.new(1, 0, 0, 0)
@@ -63,6 +59,42 @@ os.Position = UDim2.new(0.28,0,0.05)
 os.BackgroundColor3 = Color3.fromRGB(40,40,40)
 os.BorderSizePixel = 0
 os.Parent = i
+local tb1 = Instance.new("TextButton")
+tb1.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb1.Position = UDim2.new(0.05, 0, 0.05, 0)
+tb1.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb1.BorderSizePixel = 0
+tb1.Text = "Hd Admin Fly"
+tb1.TextScaled = true
+tb1.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb1.Parent = os
+local tb2 = Instance.new("TextButton")
+tb2.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb2.Position = UDim2.new(0.05, 0, 0.5, 0)
+tb2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb2.BorderSizePixel = 0
+tb2.Text = "Executor"
+tb2.TextScaled = true
+tb2.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb2.Parent = os
+local tb3 = Instance.new("TextButton")
+tb3.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb3.Position = UDim2.new(0.5, 0, 0.05, 0)
+tb3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb3.BorderSizePixel = 0
+tb3.Text = "Spy Players"
+tb3.TextScaled = true
+tb3.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb3.Parent = os
+local tb4 = Instance.new("TextButton")
+tb4.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb4.Position = UDim2.new(0.5, 0, 0.5, 0)
+tb4.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb4.BorderSizePixel = 0
+tb4.Text = "LimeWare Hub"
+tb4.TextScaled = true
+tb4.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb4.Parent = os
 local function getin()
     i.Visible = true
     i.Size = UDim2.new(1, 0, 0, 0)
@@ -73,7 +105,6 @@ local function getin()
     mi:Play()
 end
 getin()
-
 local Ex = Instance.new("TextButton")
 Ex.Parent = k
 Ex.Size = UDim2.new(0.05, 0, 1, 0)
@@ -82,7 +113,6 @@ Ex.Text = "X"
 Ex.TextColor3 = Color3.fromRGB(0, 0, 0)
 Ex.TextSize = 10
 Ex.BackgroundTransparency = 1
-
 local bx = Instance.new("TextButton")
 bx.Parent = k
 bx.Size = UDim2.new(0.05, 0, 1, 0)
@@ -91,7 +121,6 @@ bx.Text = "-"
 bx.TextColor3 = Color3.fromRGB(0, 0, 0)
 bx.TextSize = 10
 bx.BackgroundTransparency = 1
-
 local function getout()
     local ji = game:GetService("TweenService")
     local heal = UDim2.new(1, 0, 0, 0)
@@ -101,13 +130,11 @@ local function getout()
     wait(0.5)
     i.Visible = false
 end
-
 Ex.MouseButton1Click:Connect(function()
     getout()
     wait(1)
     m:Destroy()
 end)
-
 bx.MouseButton1Click:Connect(function()
     if i.Size == UDim2.new(1, 0, 8, 0) then
         getout()
@@ -115,7 +142,6 @@ bx.MouseButton1Click:Connect(function()
         getin()
     end
 end)
-
 local buttonsData = {
     { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() print("Открыт раздел About") end},
     { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() print("Открыт раздел DxnnyScripts") end},
