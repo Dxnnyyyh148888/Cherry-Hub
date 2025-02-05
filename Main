@@ -63,7 +63,7 @@ local il = Instance.new("ImageLabel")
 il.Size = UDim2.new(0.4,0,0.5)
 il.Position = UDim2.new(0.3,0,0.05)
 il.BackgroundTransparency = 1
-il.Image = "roblox.com/asset/?id=127298857604300"
+il.Image = "http://www.roblox.com/asset/?id=127298857604300"
 il.Visible = false
 local tl = Instance.new("TextLabel")
 tl.Size = UDim2.new(0.4,0,0.4)
