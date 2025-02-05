@@ -59,40 +59,53 @@ os.Position = UDim2.new(0.28,0,0.05)
 os.BackgroundColor3 = Color3.fromRGB(40,40,40)
 os.BorderSizePixel = 0
 os.Parent = i
+local Tl = Instance.new("TextLabel")
+tl.Size = UDim2.new(0.4,0,0.4)
+tl.Position = UDim2.new(0.3,0,0.55)
+tl.Text = "Design By Freezich(T.me/fr3zk), Scripted by Dxnny(t.me/Danyyyalol, Our Telegram Channel T.me/Dxnnylol"
+tl.TextScaled = true
+tl.TextColor3 = Color3.fromRGB(255,255,255)
+tl.BackgroundTransparency = 1
+tl.Parent = os
+tl.Visible = false
 local tb1 = Instance.new("TextButton")
-tb1.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb1.Size = UDim2.new(0.4, 0, 0.3)
 tb1.Position = UDim2.new(0.05, 0, 0.05, 0)
 tb1.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb1.BorderSizePixel = 0
 tb1.Text = "Hd Admin Fly"
-tb1.TextScaled = true
+tb1.TextSize = 15
+tb1.Visible = False
 tb1.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb1.Parent = os
 local tb2 = Instance.new("TextButton")
-tb2.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb2.Size = UDim2.new(0.4, 0, 0.3)
 tb2.Position = UDim2.new(0.05, 0, 0.5, 0)
 tb2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb2.BorderSizePixel = 0
+tb2.Visible = false
 tb2.Text = "Executor"
-tb2.TextScaled = true
+tb2.TextSize = 15
 tb2.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb2.Parent = os
 local tb3 = Instance.new("TextButton")
-tb3.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb3.Size = UDim2.new(0.4, 0, 0.3)
 tb3.Position = UDim2.new(0.5, 0, 0.05, 0)
+tb3.Visible = false
 tb3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb3.BorderSizePixel = 0
 tb3.Text = "Spy Players"
-tb3.TextScaled = true
+tb3.TextSize = 15
 tb3.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb3.Parent = os
 local tb4 = Instance.new("TextButton")
-tb4.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb4.Size = UDim2.new(0.4, 0, 0.3)
 tb4.Position = UDim2.new(0.5, 0, 0.5, 0)
+tb4.Visible = false
 tb4.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb4.BorderSizePixel = 0
 tb4.Text = "LimeWare Hub"
-tb4.TextScaled = true
+tb4.TextSize = 15
 tb4.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb4.Parent = os
 local function getin()
@@ -143,11 +156,11 @@ bx.MouseButton1Click:Connect(function()
     end
 end)
 local buttonsData = {
-    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() print("Открыт раздел About") end},
-    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() print("Открыт раздел DxnnyScripts") end},
-    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() print("Открыт раздел Admins") end},
-    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() print("Открыт раздел Hubs") end},
-    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() print("Открыт раздел Interesting") end},
+    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tl.Visible = true tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tl.Visible = false tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
+    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tl.Visible = false tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() tl.Visible = false tb1.Visible = false = tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
     { Text = "Jump to center", Position = UDim2.new(0.02, 0, 0.82, 0), Function = function() 
         local plr = game.Players.LocalPlayer
         if plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
