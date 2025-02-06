@@ -179,6 +179,49 @@ tb44.Visible = false
 tb44.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
 end)
+local tb111 = Instance.new("TextButton")
+tb111.Size = UDim2.new(0.4, 0, 0.3, 0)
+tb111.Position = UDim2.new(0.05, 0, 0.05, 0)
+tb111.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb111.BorderSizePixel = 0
+tb111.Text = "Sky Hub"
+tb111.TextScaled = true
+tb111.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb111.Visible = false
+tb111.Parent = os
+
+local tb222 = Instance.new("TextButton")
+tb222.Size = UDim2.new(0.4, 0, 0.3, 0)
+tb222.Position = UDim2.new(0.05, 0, 0.5, 0)
+tb222.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb222.BorderSizePixel = 0
+tb222.Text = "Ghost Hub"
+tb222.TextScaled = true
+tb222.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb222.Visible = false
+tb222.Parent = os
+
+local tb333 = Instance.new("TextButton")
+tb333.Size = UDim2.new(0.4, 0, 0.3, 0)
+tb333.Position = UDim2.new(0.5, 0, 0.05, 0)
+tb333.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb333.BorderSizePixel = 0
+tb333.Text = "LimeWare Hub"
+tb333.TextScaled = true
+tb333.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb333.Visible = false
+tb333.Parent = os
+
+local tb444 = Instance.new("TextButton")
+tb444.Size = UDim2.new(0.4, 0, 0.3, 0)
+tb444.Position = UDim2.new(0.5, 0, 0.5, 0)
+tb444.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb444.BorderSizePixel = 0
+tb444.Text = "Script Hub"
+tb444.TextScaled = true
+tb444.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb444.Visible = false
+tb444.Parent = os
 local function getin()
     i.Visible = true
     i.Size = UDim2.new(1, 0, 0, 0)
@@ -227,11 +270,11 @@ bx.MouseButton1Click:Connect(function()
     end
 end)
 local buttonsData = {
-    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = true tl.Visible = true tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
-    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() tb11.Visible = true tb22.Visible = true tb33.Visible = true tb44.Visible = true il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = true tl.Visible = true tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
+    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = true tb22.Visible = true tb33.Visible = true tb44.Visible = true il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tb111.Visible = true tb222.Visible = true tb333.Visible = true tb444.Visible = true tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
     { Text = "Jump to center", Position = UDim2.new(0.02, 0, 0.82, 0), Function = function() 
         k.Position = UDim2.new(0.15,0,0.15)
     end}
