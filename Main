@@ -43,8 +43,9 @@ k.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 k.Active = true
 k.Draggable = true
 k.Text = " • Cherry Hub"
+k.Font = Enum.Font.Code
 k.TextColor3 = Color3.fromRGB(0, 0, 0)
-k.TextSize = 15
+k.TextScaled = true
 k.TextXAlignment = Enum.TextXAlignment.Left
 k.BorderSizePixel = 0
 local i = Instance.new("Frame")
@@ -189,7 +190,9 @@ tb111.TextScaled = true
 tb111.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb111.Visible = false
 tb111.Parent = os
-
+tb111.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
+end)
 local tb222 = Instance.new("TextButton")
 tb222.Size = UDim2.new(0.4, 0, 0.3, 0)
 tb222.Position = UDim2.new(0.05, 0, 0.5, 0)
@@ -200,7 +203,9 @@ tb222.TextScaled = true
 tb222.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb222.Visible = false
 tb222.Parent = os
-
+tb222.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
 local tb333 = Instance.new("TextButton")
 tb333.Size = UDim2.new(0.4, 0, 0.3, 0)
 tb333.Position = UDim2.new(0.5, 0, 0.05, 0)
@@ -211,7 +216,9 @@ tb333.TextScaled = true
 tb333.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb333.Visible = false
 tb333.Parent = os
-
+tb333.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dxnnyyyh148888/LimeWare/refs/heads/main/LimeWare"))()
+end)
 local tb444 = Instance.new("TextButton")
 tb444.Size = UDim2.new(0.4, 0, 0.3, 0)
 tb444.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -222,6 +229,9 @@ tb444.TextScaled = true
 tb444.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb444.Visible = false
 tb444.Parent = os
+tb444.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-ScriptHub-v3-19397"))()
+end)
 local function getin()
     i.Visible = true
     i.Size = UDim2.new(1, 0, 0, 0)
