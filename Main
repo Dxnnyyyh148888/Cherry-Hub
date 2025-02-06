@@ -128,12 +128,12 @@ tb4.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dxnnyyyh148888/LimeWare/refs/heads/main/LimeWare"))()
 end)
 local tb11 = Instance.new("TextButton")
-tb11.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb11.Size = UDim2.new(0.4, 0, 0.3)
 tb11.Position = UDim2.new(0.05, 0, 0.05, 0)
 tb11.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb11.BorderSizePixel = 0
 tb11.Text = "Infinite Yield"
-tb11.TextScaled = true
+tb11.TextSize = 15
 tb11.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb11.Parent = os
 tb11.Visible = false
@@ -141,24 +141,25 @@ tb11.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 local tb22 = Instance.new("TextButton")
-tb22.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb22.Size = UDim2.new(0.4, 0, 0.3)
 tb22.Position = UDim2.new(0.05, 0, 0.5, 0)
 tb22.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb22.BorderSizePixel = 0
 tb22.Text = "Nameless Admin"
-tb22.TextScaled = true
+tb22.TextSize = 15
 tb22.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb22.Parent = os
+tb22.Visible = false
 tb22.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))();
 end)
 local tb33 = Instance.new("TextButton")
-tb33.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb33.Size = UDim2.new(0.4, 0, 0.3)
 tb33.Position = UDim2.new(0.5, 0, 0.05, 0)
 tb33.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb33.BorderSizePixel = 0
 tb33.Text = "Admin Spy"
-tb33.TextScaled = true
+tb33.TextSize = 15
 tb33.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb33.Parent = os
 tb33.Visible = false
@@ -166,12 +167,12 @@ tb33.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/uPGrjsd6"))()
 end)
 local tb44 = Instance.new("TextButton")
-tb44.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb44.Size = UDim2.new(0.4, 0, 0.3)
 tb44.Position = UDim2.new(0.5, 0, 0.5, 0)
 tb44.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 tb44.BorderSizePixel = 0
 tb44.Text = "Quirky Admin"
-tb44.TextScaled = true
+tb44.TextSize = 15
 tb44.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb44.Parent = os
 tb44.Visible = false
