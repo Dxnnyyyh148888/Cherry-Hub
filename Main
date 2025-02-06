@@ -69,7 +69,7 @@ il.Visible = false
 local tl = Instance.new("TextLabel")
 tl.Size = UDim2.new(0.4,0,0.4)
 tl.Position = UDim2.new(0.3,0,0.55)
-tl.Text = "Design By Freezich(T.me/fr3zk), Scripted by Dxnny(t.me/Danyyyalol, Our Telegram Channel T.me/Dxnnylol"
+tl.Text = "Designed By Freezich(T.me/fr3zk), Scripted by Dxnny(t.me/Danyyyalol, Our Telegram Channel T.me/Dxnnylol"
 tl.TextScaled = true
 tl.TextColor3 = Color3.fromRGB(255,255,255)
 tl.BackgroundTransparency = 1
@@ -85,6 +85,9 @@ tb1.TextSize = 15
 tb1.Visible = False
 tb1.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb1.Parent = os
+tb1.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dxnnyyyh148888/Fly-gui/refs/heads/main/Hhhhh"))()
+end)
 local tb2 = Instance.new("TextButton")
 tb2.Size = UDim2.new(0.4, 0, 0.3)
 tb2.Position = UDim2.new(0.05, 0, 0.5, 0)
@@ -95,6 +98,9 @@ tb2.Text = "Executor"
 tb2.TextSize = 15
 tb2.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb2.Parent = os
+tb2.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/taWbKhx0"))()
+end)
 local tb3 = Instance.new("TextButton")
 tb3.Size = UDim2.new(0.4, 0, 0.3)
 tb3.Position = UDim2.new(0.5, 0, 0.05, 0)
@@ -105,6 +111,9 @@ tb3.Text = "Spy Players"
 tb3.TextSize = 15
 tb3.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb3.Parent = os
+tb3.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uPGrjsd6"))()
+end)
 local tb4 = Instance.new("TextButton")
 tb4.Size = UDim2.new(0.4, 0, 0.3)
 tb4.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -115,6 +124,60 @@ tb4.Text = "LimeWare Hub"
 tb4.TextSize = 15
 tb4.TextColor3 = Color3.fromRGB(255, 255, 255)
 tb4.Parent = os
+tb4.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dxnnyyyh148888/LimeWare/refs/heads/main/LimeWare"))()
+end)
+local tb11 = Instance.new("TextButton")
+tb11.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb11.Position = UDim2.new(0.05, 0, 0.05, 0)
+tb11.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb11.BorderSizePixel = 0
+tb11.Text = "Infinite Yield"
+tb11.TextScaled = true
+tb11.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb11.Parent = os
+tb11.Visible = false
+tb11.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+local tb22 = Instance.new("TextButton")
+tb22.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb22.Position = UDim2.new(0.05, 0, 0.5, 0)
+tb22.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb22.BorderSizePixel = 0
+tb22.Text = "Nameless Admin"
+tb22.TextScaled = true
+tb22.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb22.Parent = os
+tb22.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))();
+end)
+local tb33 = Instance.new("TextButton")
+tb33.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb33.Position = UDim2.new(0.5, 0, 0.05, 0)
+tb33.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb33.BorderSizePixel = 0
+tb33.Text = "Admin Spy"
+tb33.TextScaled = true
+tb33.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb33.Parent = os
+tb33.Visible = false
+tb33.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uPGrjsd6"))()
+end)
+local tb44 = Instance.new("TextButton")
+tb44.Size = UDim2.new(0.4, 0, 0.4, 0)
+tb44.Position = UDim2.new(0.5, 0, 0.5, 0)
+tb44.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tb44.BorderSizePixel = 0
+tb44.Text = "Quirky Admin"
+tb44.TextScaled = true
+tb44.TextColor3 = Color3.fromRGB(255, 255, 255)
+tb44.Parent = os
+tb44.Visible = false
+tb44.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
+end)
 local function getin()
     i.Visible = true
     i.Size = UDim2.new(1, 0, 0, 0)
@@ -163,19 +226,15 @@ bx.MouseButton1Click:Connect(function()
     end
 end)
 local buttonsData = {
-    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() il.Visible = true tl.Visible = true tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() il.Visible = false tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
-    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = true tl.Visible = true tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
+    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() tb11.Visible = true tb22.Visible = true tb33.Visible = true tb44.Visible = true il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
     { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
     { Text = "Jump to center", Position = UDim2.new(0.02, 0, 0.82, 0), Function = function() 
-        local plr = game.Players.LocalPlayer
-        if plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
-            plr.Character.HumanoidRootPart.CFrame = CFrame.new(0, 10, 0)
-        end
+        k.Position = UDim2.new(0.15,0,0.15)
     end}
 }
-
 for _, btnData in ipairs(buttonsData) do
     local btn = Instance.new("TextButton")
     btn.Parent = i
