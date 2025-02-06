@@ -45,7 +45,7 @@ k.Draggable = true
 k.Text = " • Cherry Hub"
 k.Font = Enum.Font.Code
 k.TextColor3 = Color3.fromRGB(0, 0, 0)
-k.TextSize = 25
+k.TextSize = 20
 k.TextXAlignment = Enum.TextXAlignment.Left
 k.BorderSizePixel = 0
 local i = Instance.new("Frame")
@@ -256,7 +256,7 @@ bx.Size = UDim2.new(0.05, 0, 1, 0)
 bx.Position = UDim2.new(0.9, 0, 0, 0)
 bx.Text = "-"
 bx.TextColor3 = Color3.fromRGB(0, 0, 0)
-bx.TextSize = 10
+bx.TextScaled = true
 bx.BackgroundTransparency = 1
 local function getout()
     local ji = game:GetService("TweenService")
