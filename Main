@@ -232,6 +232,16 @@ tb444.Parent = os
 tb444.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-ScriptHub-v3-19397"))()
 end)
+local img = Instance.new("ImageLabel")
+img.Parent = os
+img.Size = UDim2.new(1,0,1)
+img.Visible = false
+img.Image = "roblox.com/asset/?id=78943003096533"
+local scrl = Instance.new("ScrollingFrame")
+scrl.Parent = os
+scrl.Size = UDim2.new(1,0,1)
+scrl.Visible = false
+scrl.BackgroundTransparency = 1
 local function getin()
     i.Visible = true
     i.Size = UDim2.new(1, 0, 0, 0)
@@ -280,11 +290,11 @@ bx.MouseButton1Click:Connect(function()
     end
 end)
 local buttonsData = {
-    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = true tl.Visible = true tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
-    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = true tb22.Visible = true tb33.Visible = true tb44.Visible = true il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tb111.Visible = true tb222.Visible = true tb333.Visible = true tb444.Visible = true tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
-    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() tb111.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "About", Position = UDim2.new(0.02, 0, 0.02, 0), Function = function() tb111.Visible = false scrl.Visible = false tb222.Visible = false img.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = true tl.Visible = true tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "DxnnyScripts", Position = UDim2.new(0.02,0,0.18), Function = function() tb111.Visible = false scrl.Visible = false img.Visible = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = true tb2.Visible = true tb3.Visible = true tb4.Visible = true end},
+    { Text = "Admins", Position = UDim2.new(0.02, 0, 0.34, 0), Function = function() tb111.Visible = false scrl.Visible img.Visible = false = false tb222.Visible = false tb333.Visible = false tb444.Visible = false tb11.Visible = true tb22.Visible = true tb33.Visible = true tb44.Visible = true il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Hubs", Position = UDim2.new(0.02, 0, 0.50, 0), Function = function() tb111.Visible = true scrl.Visible = false img.Visible = false tb222.Visible = true tb333.Visible = true tb444.Visible = true tb11.Visible = false tb22.Visible = false tb33.Visible = false tb44.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
+    { Text = "Interesting", Position = UDim2.new(0.02, 0, 0.66, 0), Function = function() tb111.Visible = false scrl.Visible = true img.Visible = true tb222.Visible = false tb333.Visible = false tb444.Visible = false il.Visible = false tl.Visible = false tb1.Visible = false tb2.Visible = false tb3.Visible = false tb4.Visible = false end},
     { Text = "Jump to center", Position = UDim2.new(0.02, 0, 0.82, 0), Function = function() 
         k.Position = UDim2.new(0.15,0,0.15)
     end}
