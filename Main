@@ -210,6 +210,32 @@ scrl.Parent = os
 scrl.Size = UDim2.new(1,0,1)
 scrl.Visible = false
 scrl.BackgroundTransparency = 1
+local stl = Instance.new("TextLabel")
+stl.Size = UDim2.new(1,0,0.05)
+stl.BackgroundColor3 = Color3.fromRGB(55,55,55)
+stl.Text = "DxnnyScripts"
+stl.TextScaled = true
+stl.TextColor3 = Color3.fromRGB(255,255,255)
+stl.Parent = scrl
+local stb = Instance.new("TextButton")
+stb.Position = UDim2.new(0.05,0,0.1)
+stb.Size = UDim2.new(0.4,0,0.05)
+stb.BackgroundColor3 = Color3.fromRGB(50,50,50)
+stb.Text = "Anti Other Cheaters"
+stb.TextSize = 15
+stb.TextColor3 = Color3.fromRGB(255,255,255)
+stb.Parent = scrl
+local stb2 = Instance.new("TextButton")
+stb2.Size = UDim2.new(0.4,0,0.05)
+stb2.Position = UDim2.new(0.55,0,0.1)
+stb2.BackgroundColor3 = Color3.fromRGB(50,50,50)
+stb2.Text = "Bang"
+stb2.TextColor3 = Color3.fromRGB(255,255,255)
+stb2.Parent = scrl
+stb2.TextSize = 15
+stb2.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/bV5d8Qjd"))()
+end)
 local function getin()
     i.Visible = true
     i.Size = UDim2.new(1, 0, 0, 0)
