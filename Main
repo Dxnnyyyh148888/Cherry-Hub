@@ -34,19 +34,19 @@ local w = game:GetService("TweenService")
 local hoel = UDim2.new(0.3,0,0.3)
 local ifa = TweenInfo.new(0.5,Enum.EasingStyle.Back, Enum.EasingDirection.Out)
 local geg = w:Create(y,ifa,{Size = hoel})
-geg:Play
+geg:Play()
 text.Text = "By Dxnny, T.me/Dxnnylol"
 wait(2.5)
 local ww = game:GetService("TweenService")
 local hoele = UDim2.new(0.15,0,0.15)
 local iifa = TweenInfo.new(0.5,Enum.EasingStyle.Back, Enum.EasingDirection.Out)
 local geeg = ww:Create(y,iifa,{Position = hoele})
-geeg:Play
+geeg:Play()
 local www = game:GetService("TweenService")
 local hoel = UDim2.new(0.6,0,0.7)
 local iffa = TweenInfo.new(0.5,Enum.EasingStyle.Back, Enum.EasingDirection.Out)
 local gegg = www:Create(y,iffa,{Size = hoel})
-gegg:Play
+gegg:Play()
 wait(0.5)
 ii: Destroy()
 local m = Instance.new("ScreenGui")
