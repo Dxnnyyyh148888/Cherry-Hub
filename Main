@@ -258,7 +258,7 @@ stl3.Parent = scrl
 stl3.Position = UDim2.new(0,0,0.11)
 stl3.BackgroundColor3 = Color3.fromRGB(55,55,55)
 stl3.Text = "Murder Mystery"
-stl3.TextSize = 15
+stl3.TextScaled = true
 stl3.TextColor3 = Color3.fromRGB(255,255,255)
 stl3.BorderSizePixel = 0
 local function getin()
