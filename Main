@@ -32,6 +32,9 @@ text.TextWrapped = true
 wait(2.5)
 text.Text = "By Dxnny, T.me/Dxnnylol"
 wait(2.5)
+Text:Destroy()
+Image:Destroy()
+y.BackgroundTransparency = 0
 local ww = game:GetService("TweenService")
 local hoele = UDim2.new(0.15,0,0.15)
 local iifa = TweenInfo.new(0.5,Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
