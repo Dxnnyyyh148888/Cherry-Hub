@@ -224,13 +224,13 @@ local stb = Instance.new("TextButton")
 stb.Position = UDim2.new(0.05, 0, 0.06, 0)
 stb.Size = UDim2.new(0.4, 0, 0.05, 0)
 stb.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-stb.Text = "Murder Mystery Admin"
+stb.Text = "HD Admin Fly"
 stb.TextSize = 15
 stb.TextColor3 = Color3.fromRGB(255, 255, 255)
 stb.BorderSizePixel = 0
 stb.Parent = scrl
 stb.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dxnnyyyh148888/Mm2-panel/refs/heads/main/Main"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dxnnyyyh148888/Fly-gui/refs/heads/main/Hhhhh"))()
 end)
 local stb2 = Instance.new("TextButton")
 stb2.Size = UDim2.new(0.4, 0, 0.05, 0)
@@ -262,6 +262,54 @@ stl3.TextScaled = true
 stl3.TextColor3 = Color3.fromRGB(255, 255, 255)
 stl3.BorderSizePixel = 0
 stl3.Parent = scrl
+local stb3 = Instance.new("TextButton")
+stb3.Size = UDim2.new(0.4, 0, 0.05, 0)
+stb3.Position = UDim2.new(0.05, 0, 0.2, 0)
+stb3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+stb3.Text = "Dxnny's MM2 Panel"
+stb3.TextSize = 15
+stb3.TextColor3 = Color3.fromRGB(255, 255, 255)
+stb3.BorderSizePixel = 0
+stb3.Parent = scrl
+stb3.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dxnnyyyh148888/Mm2-panel/refs/heads/main/Main"))()
+end)
+local stb4 = Instance.new("TextButton")
+stb4.Size = UDim2.new(0.4, 0, 0.05, 0)
+stb4.Position = UDim2.new(0.55, 0, 0.2, 0)
+stb4.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+stb4.Text = "Vinixu's MM2 Script"
+stb4.TextSize = 15
+stb4.TextColor3 = Color3.fromRGB(255, 255, 255)
+stb4.BorderSizePixel = 0
+stb4.Parent = scrl
+stb4.MouseButton1Click:Connect(function()
+loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+local stb5 = Instance.new("TextButton")
+stb5.Size = UDim2.new(0.4, 0, 0.05, 0)
+stb5.Position = UDim2.new(0.05, 0, 0.26, 0)
+stb5.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+stb5.Text = "YARHM"
+stb5.TextSize = 15
+stb5.TextColor3 = Color3.fromRGB(255, 255, 255)
+stb5.BorderSizePixel = 0
+stb5.Parent = scrl
+stb5.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+end)
+local stb6 = Instance.new("TextButton")
+stb6.Size = UDim2.new(0.4, 0, 0.05, 0)
+stb6.Position = UDim2.new(0.55, 0, 0.26, 0)
+stb6.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+stb6.Text = "Classic MM2 Admin"
+stb6.TextSize = 15
+stb6.TextColor3 = Color3.fromRGB(255, 255, 255)
+stb6.BorderSizePixel = 0
+stb6.Parent = scrl
+stb6.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+end)
 local function getin()
     i.Visible = true
     i.Size = UDim2.new(1, 0, 0, 0)
